@@ -1,20 +1,17 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ul,
+ol {
   list-style: none;
 }
 
@@ -25,10 +22,17 @@ a {
 
 button {
   cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.4;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
 }
